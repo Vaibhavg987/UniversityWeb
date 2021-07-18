@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3dae3299bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>University Website</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#footer">ABOUT</a></li>
+                    <li><a href="">COURSES</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+
+    <!-- Contact Us -->
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56044.02463565462!2d76.94519883303805!3d28.60722965135512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0fdcb4d53a21%3A0x8800d482f7f39fc0!2sNajafgarh%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1626608411776!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Najafgarh, New Delhi, IN</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91 1239423929</h5>
+                        <p>Monday to Friday, 10AM to 6PM</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>gvaibhav4@gmail.com</h5>
+                        <p>Email us for your query</p>
+                    </span>
+                </div>
+            
+            </div>
+           
+        </div>
+        <div class="contact-col">
+            <form>
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="email" name="email"placeholder="Enter email" required>
+            <input type="text" name="subject" placeholder="Enter your subject" required>
+            <textarea  rows="8" name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+        </form>
+        </div>
+            
+    </section>
+
+
+    <!-- footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dicta pariatur fugit suscipit, ipsum
+            recusandae nisi non officiis<br> neque minima Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Minima,
+            sed.</p>
+        <div class="icons">
+            <i class="fa fa-facebook-official"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Vaibhav</p>
+    </section>
+
+    <!-- javascript for toggle -->
+    <script>
+        var navLinks = document.getElementById('navLinks');
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
